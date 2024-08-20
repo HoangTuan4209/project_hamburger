@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.wrapper {
+    width: 100%;
+    background: url('https://burgerking.vn/skin/frontend/bk2/default/images/BG-nav-bar-2.png');
+    background-repeat: repeat;
+    max-height: 135px;
+}
+
+.container {
+    width: 1200px;
+    height: 98px;
+    margin: 0 auto;
+    background-color: transparent;
+
+    ul {
+        width: 100vw;
+        max-width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            width: 120px;
+            height: 85.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: #212121;
+                font-size: 13px;
+                font-weight: bold;
+                transition: all .3s ease;
+
+                .active {
+                    color: #f07a00;
+                }
+
+                &:hover span{
+                    color: #f07a00;
+                }
+
+                span{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                img {
+                    display: block;
+                    max-width: 58px;
+                    min-height: 58px;
+                    border-radius: 50%;
+                    padding: 5px;
+                    margin: 5px auto;
+                    -webkit-box-shadow: 2px 2px 9px 1px #ececec;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .container {
+        max-width: 100%;
+        height: 98px;
+        margin: 0 auto;
+        background-color: transparent;
+    
+        ul {
+            li:nth-child(n+6) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    ul {
+        li:nth-child(n+4) {
+            display: none;
+        }
+    }
+}
