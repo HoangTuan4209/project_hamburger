@@ -33,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
 
             li{
                 display: inline-block;
@@ -58,7 +59,7 @@
     }
 }
 
-@media (min-width: 430px) and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 1024px) {
     .container {
         width: 100%;
         padding: 0 25px;
@@ -72,25 +73,24 @@
             order: 2;
             width: 100%;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
             .link {
                 list-style: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 gap: 10px;
-
 
                 li {
                     margin-left: 0;
                     margin-bottom: 10px;
+                }
 
-                    a{
-                        color: #baa699;
-                        text-decoration: none;
-                        font-size: 13px;
-                        font-family: 'Roboto';
-                    }
+                a{
+                    color: #baa699;
+                    text-decoration: none;
+                    font-size: 13px;
+                    font-family: 'Roboto';
                 }
             }
         }
@@ -124,3 +124,4 @@
         }
     }
 }
+

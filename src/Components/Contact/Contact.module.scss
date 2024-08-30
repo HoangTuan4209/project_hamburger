@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.wrapper {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f0ebe5;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 15px 0;
+    height: auto;
+    margin-bottom: 40px;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    .titleTop {
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #c21d1b;
+        font-weight: 700;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: .025em;
+        border-bottom: 1px solid #c0bcb7;
+        padding-bottom: 7px;
+        margin-bottom: 24px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 30px;
+        }
+
+        .left {
+            p {
+                font-size: 14px;
+                padding: 7px 0;
+
+                .icon {
+                    margin-right: 3px;
+                    color: #c21d1b;
+                }
+            }
+
+        }
+
+        .right {
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto; /* Canh giữa form */
+                font-family: "Roboto", sans-serif; /* Sử dụng font chữ Roboto */
+            }
+            
+            form label {
+                font-weight: bold;
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
+            
+            form label span {
+                color: red; /* Màu đỏ cho dấu * */
+            }
+            
+            form input,
+            form textarea {
+                padding: 10px;
+                font-size: 16px;
+                margin-bottom: 20px; /* Khoảng cách dưới */
+                border: 1px solid #ccc;
+                border-radius: 4px; /* Bo góc cho input và textarea */
+                outline: none;
+            }
+            
+            form textarea {
+                height: 100px; /* Chiều cao cho textarea */
+                resize: none; /* Ngăn người dùng thay đổi kích thước */
+            }
+            
+            form button {
+                background-color: #f07a00;
+                color: white;
+                font-size: 14px;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: background-color 0.3s ease;
+                width: 100px;
+            }
+            
+            form button:hover {
+                background-color: #d66a00; /* Màu khi hover */
+            }            
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .grid {
+        display: block;
+    }
+    .grid > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

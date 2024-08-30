@@ -12,6 +12,7 @@ import Thucuong from './Pages/Menu/Thucuong/Thucuong.js';
 import Cart from "./Pages/Cart/Cart.js";
 import Sale from "./Pages/Sale/Sale.js";
 import About from "./Pages/About-us/About.js";
+import Contact from "./Components/Contact/Contact.js";
 
 const renderPage = () => {
     const userRouters = [
@@ -66,6 +67,10 @@ const renderPage = () => {
         {
             path: ROUTERS.USER.ABOUT,
             component: <About />
+        },
+        {
+            path: ROUTERS.USER.CONTACT,
+            component: <Contact />
         }
     ]
 

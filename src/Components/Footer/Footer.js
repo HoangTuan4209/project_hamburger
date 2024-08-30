@@ -18,15 +18,15 @@ const Footer = () => {
             <Link to={ROUTERS.USER.ABOUT}>
               <a href='#'>Giới Thiệu</a>
             </Link>
-            <li>
-              <a href='#'>Hướng Dẫn</a>
-            </li>
-            <li>
-              <a href='#'>Liên Hệ</a>
-            </li>
-            <li>
-              <a href='#'>Tuyển Dụng</a>
-            </li>
+            <Link>
+              <a href='#'>Hướng dẫn</a>
+            </Link>
+            <Link to={ROUTERS.USER.CONTACT}>
+              <a href='#'>Liên hệ</a>
+            </Link>
+            <Link>
+              <a href='#'>Tuyển dụng</a>
+            </Link>
           </ul>
         </div>
         <div className={styles.social}>

@@ -8,6 +8,7 @@ const Thucuong = () => {
   const { AddToCart,setTotal,setCount } = useContext(CartContext);
 
   const handleClick = (product) => {
+    alert('Bạn vừa thêm thành công 1 món');
     const priceNumber = Number(product.price.replace(/[^0-9.-]+/g,""));
     const countProduct = product.count;
     const newItem = {

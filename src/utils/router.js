@@ -10,6 +10,7 @@ export const ROUTERS = {
         THUCUONG: "/Thucuong",
         CART: "/Cart",
         SALE: "/Sale",
-        ABOUT: '/About'
+        ABOUT: '/About',
+        CONTACT: '/Contact'
     }
 }
