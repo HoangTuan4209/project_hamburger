@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .wrapper {
     width: 100%;
     padding: 50px 0;
@@ -15,7 +16,6 @@
 }
 
 .content {
-
     .titleTop {
         font-size: 24px;
         text-transform: uppercase;
@@ -41,5 +41,29 @@
         line-height: 1.5;
         margin-bottom: 15px;
         padding: 5px 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+
+        .content {
+            width: 540px;
+            margin: 0 auto;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        max-width: 98%;
     }
 }

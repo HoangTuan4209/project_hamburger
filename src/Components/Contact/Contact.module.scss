@@ -57,8 +57,8 @@
                 display: flex;
                 flex-direction: column;
                 width: 100%;
-                margin: 0 auto; /* Canh giữa form */
-                font-family: "Roboto", sans-serif; /* Sử dụng font chữ Roboto */
+                margin: 0 auto;
+                font-family: "Roboto", sans-serif;
             }
             
             form label {
@@ -68,16 +68,16 @@
             }
             
             form label span {
-                color: red; /* Màu đỏ cho dấu * */
+                color: red;
             }
             
             form input,
             form textarea {
                 padding: 10px;
                 font-size: 16px;
-                margin-bottom: 20px; /* Khoảng cách dưới */
+                margin-bottom: 20px;
                 border: 1px solid #ccc;
-                border-radius: 4px; /* Bo góc cho input và textarea */
+                border-radius: 4px;
                 outline: none;
             }
             
@@ -104,14 +104,9 @@
             }            
         }
     }
-}
-
-@media (max-width: 767px) {
-    .grid {
-        display: block;
-    }
-    .grid > div {
-        width: 100%;
-        margin-bottom: 10px;
+    @media (max-width: 767px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
     }
 }
